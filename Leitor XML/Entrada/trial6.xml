@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <TRIAL ID="6" GENDER="m" AGE="23" DURATION="5.71">
-	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -9,7 +9,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="abs3" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="a estrela a noroeste">
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="2" WORD-STRING ="a estrela a noroeste">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -33,7 +33,7 @@
 			<ATTRIBUTE NAME="second-landmark-others" VALUE="red" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="a estrela a noroeste ao lado do quadrado vermelho">
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="a estrela a noroeste ao lado do quadrado vermelho">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -43,7 +43,7 @@
 			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -67,7 +67,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela ao noroeste ao lado do quadrado">
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela ao noroeste ao lado do quadrado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -83,7 +83,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela ao nordeste ao lado do quadrado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />

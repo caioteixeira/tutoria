@@ -17,7 +17,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="que se localiza ao lado direito inferior, à  esquerda de um quadrado juntamente com uma circunferência">
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="que se localiza ao lado direito inferior, à  esquerda de um quadrado juntamente com uma circunferência">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
 			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
@@ -26,7 +26,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="que se localiza na parte esquerda inferior ao lado de um quadrado juntamente com um circulo vermelho">
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="que se localiza na parte esquerda inferior ao lado de um quadrado juntamente com um circulo vermelho">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
 			<ATTRIBUTE NAME="vpos" VALUE="bottom" />
@@ -61,7 +61,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="que se localiza à  direita de um quadrado e de uma circunferência, sendo eles à  esquerda inferior da imagem, acima de outra estrela e abaixo de outras duas estrelas e uma circunferência">
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="que se localiza à  direita de um quadrado e de uma circunferência, sendo eles à  esquerda inferior da imagem, acima de outra estrela e abaixo de outras duas estrelas e uma circunferência">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="others" VALUE="above(e6), below(e3), below(e1), below(c1)" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -89,7 +89,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="que se localiza à  esquerda de um quadrado e uma circunferência, na parte superior direita da imagem entre duas outras estrelas, uma acima, e ainda outras duas abaixo">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="que se localiza à  esquerda de um quadrado e uma circunferência, na parte superior direita da imagem entre duas outras estrelas, uma acima, e ainda outras duas abaixo">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
 			<ATTRIBUTE NAME="vpos" VALUE="top" />

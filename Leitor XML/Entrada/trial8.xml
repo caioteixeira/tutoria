@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <TRIAL ID="8" GENDER="m" AGE="23" DURATION="3.39">
-	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -9,7 +9,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado.">
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -18,7 +18,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -27,7 +27,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="Estrela no quadrante inferior esquerdo ao lado do quadrado.">
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="Estrela no quadrante inferior esquerdo ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -36,7 +36,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado preenchido.">
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado preenchido.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -46,7 +46,7 @@
 			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -55,7 +55,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -64,7 +64,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="Estrela no quadrante inferior esquerdo ao lado do quadrado.">
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="Estrela no quadrante inferior esquerdo ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -73,7 +73,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado.">
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior esquerdo ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -82,7 +82,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante inferior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -91,7 +91,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="Estrela no quadrante superior direito ao lado do quadrado.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />

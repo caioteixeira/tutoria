@@ -62,7 +62,7 @@ public class Context {
 		NodeList listaObjetos = context.getElementsByTagName("ENTITY");
 		return listaObjetos.getLength();
 	}
-	
+	/*
 	//Retorna a cor do Target
 	public String getCorTarget()
 	{
@@ -80,7 +80,7 @@ public class Context {
 		return "";
 		
 	}
-	
+	*/
 	//Retorna o tipo do target
 	public String getTipoTarget()
 
@@ -132,7 +132,7 @@ public class Context {
 		}
 		return "";
 	}
-	
+	/*
 	//Retorna o numero de objetos com a mesma cor do Target
 	public int getQuantObjetosCorTarget()
 	{
@@ -152,7 +152,7 @@ public class Context {
 		}
 		
 		return contador;
-	}
+	} */
 	//Retorna o numero de objetos do mesmo tipo do Target
 	public int getQuantObjetosTipoTarget()
 	{

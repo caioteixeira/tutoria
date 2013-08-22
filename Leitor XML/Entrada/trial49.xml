@@ -58,7 +58,7 @@
 			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="do lado direito do quadrado que está do lado direito do círculo branco, na parte inferior esquerda da tela">
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="do lado direito do quadrado que está do lado direito do círculo branco, na parte inferior esquerda da tela">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
 			<ATTRIBUTE NAME="vpos" VALUE="bottom" />

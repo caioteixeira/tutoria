@@ -95,7 +95,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="você deve olhar para a estrela seguida do quadrado e o circulo mais afastado">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="você deve olhar para a estrela seguida do quadrado e o circulo mais afastado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="next" VALUE="q6-c2" />

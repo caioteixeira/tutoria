@@ -110,7 +110,7 @@
 			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="uma estrela branca à esquerda de um quadrado branco e de um circulo branco">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="6" WORD-STRING ="uma estrela branca à esquerda de um quadrado branco e de um circulo branco">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="others" VALUE="white" />

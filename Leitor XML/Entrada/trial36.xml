@@ -101,7 +101,7 @@
 			<ATTRIBUTE NAME="second-landmark-others" VALUE="distant" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="uma estrela de ponta cabeça que está do lado de um quadrado e de um circulo branco afastado">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="uma estrela de ponta cabeça que está do lado de um quadrado e de um circulo branco afastado">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="others" VALUE="upside-down" />

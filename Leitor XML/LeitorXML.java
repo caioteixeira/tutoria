@@ -25,15 +25,14 @@ public class LeitorXML {
 		Após inicializado, cada linha armazena:
 		posição	conteudo
 		0		id
-		1		cor do target
-		2		tipo do target
-		3		quantidade de objetos do contexto
-		4		quantidade de objetos com a mesma cor do target
-		5		quantidade de objetos com o mesmo tipo do target
-		6		vPos do target
-		7		Quantidade de objetos com o mesmo vPos do target
-		8		hPos do target
-		9		Quantidade de objetos com o mesmo hPos do target
+		1		tipo do target
+		2		quantidade de objetos do contexto
+		3		quantidade de objetos com o mesmo tipo do target
+		4		vPos do target
+		5		Quantidade de objetos com o mesmo vPos do target
+		6		hPos do target
+		7		Quantidade de objetos com o mesmo hPos do target		
+	
 	*/
 	private static String[][] tabelaContextos;
 	
@@ -54,7 +53,7 @@ public class LeitorXML {
 		File saidaArquivo = new File("saida.arff");
 		File arquivoXML = new File(nomeDoArquivo);
 		
-		for(int i = 0; i<64; i++)
+		for(int i = 0; i<50; i++)
 		{
 			arquivoXML = new File(nomeDoArquivo+"/trial"+(i+1)+".xml");
 			
@@ -82,15 +81,13 @@ public class LeitorXML {
 		{
 			Context context = new Context(contextosIncluidos[i]);
 			tabelaSaida[i][0] = contextosIncluidos[i]; //Define ID do contexto
-			tabelaSaida[i][1] = context.getCorTarget();//Define cor do Target;
-			tabelaSaida[i][2] = context.getTipoTarget(); //Define tipo do Target;
-			tabelaSaida[i][3] = String.valueOf(context.getQuantObjetos()); //Define quantidade de Objetos
-			tabelaSaida[i][4] = String.valueOf(context.getQuantObjetosCorTarget()); //Define quantidade de Objetos da cor do Target
-			tabelaSaida[i][5] = String.valueOf(context.getQuantObjetosTipoTarget()); //Define quantidade de Objetos do tipo do Target
-			tabelaSaida[i][6] = context.getVPosTarget();
-			tabelaSaida[i][7] = String.valueOf(context.getQuantObjetosVPosTarget());
-			tabelaSaida[i][8] = context.getHPosTarget();
-			tabelaSaida[i][9] = String.valueOf(context.getQuantObjetosHPosTarget());
+			tabelaSaida[i][1] = context.getTipoTarget(); //Define tipo do Target;
+			tabelaSaida[i][2] = String.valueOf(context.getQuantObjetos()); //Define quantidade de Objetos
+			tabelaSaida[i][3] = String.valueOf(context.getQuantObjetosTipoTarget()); //Define quantidade de Objetos do tipo do Target
+			tabelaSaida[i][4] = context.getVPosTarget();
+			tabelaSaida[i][5] = String.valueOf(context.getQuantObjetosVPosTarget());
+			tabelaSaida[i][6] = context.getHPosTarget();
+			tabelaSaida[i][7] = String.valueOf(context.getQuantObjetosHPosTarget());
 		}
 		return tabelaSaida;
 	}
@@ -160,23 +157,19 @@ public class LeitorXML {
 		printWriter.print(id); //Imprime o id
 		printWriter.print(",");
 		//ATRIBUTOS FIXOS
-		printWriter.print(tabelaContextos[i][1]); //Imprime a cor do target
+		printWriter.print(tabelaContextos[i][1]); //Imprime o tipo do target
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][2]); //Imprime o tipo do target
+		printWriter.print(tabelaContextos[i][2]); //Imprime o numero de objetos do Contexto
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][3]); //Imprime o numero de objetos do Contexto
+		printWriter.print(tabelaContextos[i][3]); //Imprime o numero de objetos com o mesmo tipo do target
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][4]); //Imprime o numero de objetos com a mesma cor do target
+		printWriter.print(tabelaContextos[i][4]); //Imprime o vPos do target
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][5]); //Imprime o numero de objetos com o mesmo tipo do target
+		printWriter.print(tabelaContextos[i][5]); //Imprime o numero de objetos com o mesmo vPos do target
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][6]); //Imprime o vPos do target
+		printWriter.print(tabelaContextos[i][6]); //Imprime o hPos do target
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][7]); //Imprime o numero de objetos com o mesmo vPos do target
-		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][8]); //Imprime o hPos do target
-		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][9]); //Imprime o numero de objetos com o mesmo hPos do target
+		printWriter.print(tabelaContextos[i][7]); //Imprime o numero de objetos com o mesmo hPos do target
 		printWriter.print(",");
 		//ATRIBUTOS DO TRIAL
 		printWriter.print(elemento.getAttribute("LENGTH")); //Imprime o atributo Length do trial

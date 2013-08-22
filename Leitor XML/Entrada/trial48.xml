@@ -76,7 +76,7 @@
 			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="do lado esquerdo do quadrado branco e da bola branca">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="do lado esquerdo do quadrado branco e da bola branca">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="left" VALUE="q6-c2" />
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />

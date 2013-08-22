@@ -53,7 +53,7 @@
 			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="a estrela ao lado direto do quadrado no canto inferior esquerdo da imagem">
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="a estrela ao lado direto do quadrado no canto inferior esquerdo da imagem">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />

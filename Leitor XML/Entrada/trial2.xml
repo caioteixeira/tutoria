@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <TRIAL ID="2" GENDER="m" AGE="18" DURATION="7.37">
-	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="6" WORD-STRING ="a estrela que está no canto inferior esquerdo ao lado de um quadrado branco e um circulo branco">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="7" WORD-STRING ="a estrela que está no canto inferior esquerdo ao lado de um quadrado branco e um circulo branco">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -30,7 +30,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="7" WORD-STRING ="a estrela branca que está no canto inferior esquerdo, ao lado de um quadrado branco e um circulo vermelho com traçado preto.">
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="8" WORD-STRING ="a estrela branca que está no canto inferior esquerdo, ao lado de um quadrado branco e um circulo vermelho com traçado preto.">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="others" VALUE="white" />
@@ -61,7 +61,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="a estrela que está no canto inferior direito, ao lado de um quadrado branco e um circulo branco">
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="7" WORD-STRING ="a estrela que está no canto inferior direito, ao lado de um quadrado branco e um circulo branco">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
@@ -83,7 +83,7 @@
 			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela que está no canto inferior esquerdo, ao lado de um quadrado e um circulo">
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="a estrela que está no canto inferior esquerdo, ao lado de um quadrado e um circulo">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="left" />
@@ -102,7 +102,7 @@
 			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela que está no canto superior direito ao lado de um quadrado e um circulo">
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="a estrela que está no canto superior direito ao lado de um quadrado e um circulo">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="hpos" VALUE="right" />
