@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="16" GENDER="m" AGE="18" DURATION="3.22">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="uma estrela ao lado esquerdo de um quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="uma estrela do lado direito de um quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="uma estrela ao lado esquerdo de um quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="uma estrela branca do lado direito de um quadrado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="uma estrela branca ao lado de um quadrado vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="next" VALUE="q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="uma estrela branca ao lado esquerdo de um quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="uma estrela branca ao lado esquerdo de um quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="white" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="uma pequena estrela ao lado direito de um quadrado, que esta ao lado direito de um circulo">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="small" />
+			<ATTRIBUTE NAME="right" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="uma estrela ao lado direito de um quadrado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="uma estrela do lado esquerdo de um quadrado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="uma pequena estrela ao lado esquerdo de um quadrado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="small" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

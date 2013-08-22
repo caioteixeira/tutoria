@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="25" GENDER="m" AGE="20" DURATION="1.12">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q2-c1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1-c1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6-c2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="branca.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="que está ao lado do círculo e do quadrado vermelho.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c1-q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c1-q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c2-q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="que está ao lado do círculo branco e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1-c1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q4-c2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do círculo e do quadrado.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6-c2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="42" GENDER="m" AGE="19" DURATION="5.19">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="colourless" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela ao lado de quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="colourless" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="colourless" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="estrela vazia">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="colourless" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado preenchido">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="estrela ao lado de quadrado no lado esquerdo">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="next" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela ao lado de quadrado no lado esquerdo">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="estrela vazio ao lado do quadrado vazio">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="colourless" />
+			<ATTRIBUTE NAME="next" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="colourless" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela ao lado do quadrado no lado direito">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

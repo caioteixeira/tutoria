@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="28" GENDER="m" AGE="23" DURATION="2.34">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que precede um objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que vem em seguida do objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que precede o objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="o objeto de ângulos agudos preenchido de branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles, white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="o objeto de ângulos agudos preenchido de branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles, white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que precede um objeto de ângulos retos preenchido de branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles, white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="o objeto de ângulos agudos que precede um objeto de ângulos retos preenchido de branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles, white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="o objeto de ângulos agudos que vem em seguida da sequencia cujo primeiro objeto é redondo e preenchido de branco e o segundo tem os ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="next" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="round, white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que vem em seguida do objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="o objeto de ângulos agudos que precede o objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="objeto de ângulos agudos que precede um objeto de ângulos retos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="object" />
+			<ATTRIBUTE NAME="others" VALUE="acute-angles" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="object" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="acute-angles" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

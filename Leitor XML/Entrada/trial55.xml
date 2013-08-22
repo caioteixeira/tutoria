@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="55" GENDER="f" AGE="19" DURATION="2.63">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="única branca">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="única branca">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="ao lado do quadrado branco que tem um círculo da mesma cor">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="ao lado do quadrado branco da parte superior da tela">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="ao lado do quadrado branco à  direita da tela">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="next" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="ao lado do quadrado branco do lado direito da tela">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="hpos" VALUE="right" />
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

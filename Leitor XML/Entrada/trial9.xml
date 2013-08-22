@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="9" GENDER="m" AGE="21" DURATION="5.42">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que fica à esquerda do quadrado não colorido de vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do quadrado não colorido de vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que fica à esquerda do quadrado que não é vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="estrela não vermelha">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que fica ao lado do quadrado vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que fica à esquerda do quadrado não colorido de vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que fica à esquerda do quadrado não colorido de vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que está à  direita do primeiro quadrado, da esquerda pra direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="1st-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que fica à direita do quadrado da parte superior do desenho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="vpos" VALUE="top" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="terceira, dà esquerda prà direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="3rd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="terceira, dà esquerda prà direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="3rd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

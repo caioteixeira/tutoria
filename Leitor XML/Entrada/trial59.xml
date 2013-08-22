@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="59" GENDER="m" AGE="18" DURATION="6.60">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="a estrela posicionada ao lado esquerdo de um cubo branco, cuja posição é ao lado esquerdo de um círculo também branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q2-c1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela posicionada ao lado direito do único quadrado branco.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="estrela que está posicionado ao lado esquerdo do único quadrado branco.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="6" WORD-STRING ="estrela sem cor posicionada ao lado direito de um cubo sem cor, o qual está posicionada ao lado direito de um círculo vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="colourless" />
+			<ATTRIBUTE NAME="right" VALUE="c3-q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="colourless" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="estrela sem cor e posicionada ao lado do único quadrado vermelho.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="colourless" />
+			<ATTRIBUTE NAME="next" VALUE="q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="estrela posicionada ao lado esquerdo de um quadrado branco , que está posicionado ao lado de um círculo branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="c1-q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="estrela posicionada ao lado direito do único quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="estrela posicionada ao lado direito de um cubo branco que esta ao lado direito de um circulo branco.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="estrela que está posicionada ao lado direito de um cubo branco que está do lado direito de um círculo branco.">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q1-c1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="5" WORD-STRING ="estrela que esta posicionada ao lado esquerdo de um quadrado branco que está ao lado esquerdo de um círculo branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q4-c2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="estrela posicionado ao lado esquerdo de um quadrado branco que está ao lado esquerdo de um círculo branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="left" VALUE="q6-c2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>

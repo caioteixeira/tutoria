@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="29" GENDER="m" AGE="19" DURATION="2.87">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="ao lado do único quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="segunda dà esquerda prà direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="2nd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="a terceira dà esquerda para à direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="3rd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="2" WORD-STRING ="primeira estrela à esquerda">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="1st" />
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="mais à esquerda">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="hpos" VALUE="left" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="única ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="a única ao lado do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="1" WORD-STRING ="segunda de baixo pra cima">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="2nd-top-bottom" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="segunda dà esquerda prà direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="2nd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="a terceira dà esquerda para à direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="3rd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="1" WORD-STRING ="terceira dà esquerda prà direita">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="3rd-left-right" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>
