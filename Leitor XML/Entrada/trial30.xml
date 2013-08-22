@@ -8,7 +8,7 @@
 			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
 		</ATTRIBUTE-SET>
 	</CONTEXT>
-	<CONTEXT ID ="abs3" REFERENCE-TYPE ="ambiguos" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela que tem objetos a sua volta">
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="ambiguous" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela que tem objetos a sua volta">
 		<ATTRIBUTE-SET>
 			<ATTRIBUTE NAME="type" VALUE="star" />
 			<ATTRIBUTE NAME="next" VALUE="q1-c1" />

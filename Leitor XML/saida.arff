@@ -16,7 +16,7 @@
 @ATTRIBUTE next {0,1}
 @ATTRIBUTE left {0,1}
 @ATTRIBUTE right {0,1}
-@ATTRIBUTE referencetype {fully-spec,no-landmark,under-spec,ambiguous}
+@ATTRIBUTE referencetype {ambiguous,fully-spec,no-landmark,under-spec}
 @ATTRIBUTE minimal {yes,no}
 @DATA
 1,abs1,star,8,3,centre,3,right,3,4,1,0,0,1,0,fully-spec,no
@@ -194,7 +194,7 @@
 29,proj3,star,10,3,centre,3,right,3,1,1,0,0,0,0,no-landmark,no
 29,proj5,star,12,3,centre,6,left,8,1,1,0,0,0,0,no-landmark,no
 30,abs1,star,8,3,centre,3,right,3,3,0,0,1,0,0,fully-spec,no
-30,abs3,star,10,3,centre,2,left,3,3,0,0,1,0,0,ambiguos,no
+30,abs3,star,10,3,centre,2,left,3,3,0,0,1,0,0,ambiguous,no
 30,abs5,star,12,3,centre,3,right,3,5,0,0,0,1,0,fully-spec,no
 30,proj1,star,8,3,centre,3,left,3,5,0,0,0,0,1,fully-spec,no
 30,proj3,star,10,3,centre,3,right,3,5,0,0,1,0,0,fully-spec,no
