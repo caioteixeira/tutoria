@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="weka.core.Instances"/>
+<fullyQualifiedTypeName name="weka.classifiers.trees.J48"/>
+<fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
 </qualifiedTypeNameHistroy>

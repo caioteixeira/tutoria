@@ -1,12 +1,8 @@
 import weka.core.Instances;
-import weka.classifiers.Evaluation;
-import weka.classifiers.trees.J48;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
-
 
 public class Classificador {
 	public static void main(String[] args) {
@@ -27,22 +23,6 @@ public class Classificador {
 		treino.setClassIndex(treino.numAttributes() - 1);
 		teste.setClassIndex(teste.numAttributes() - 1);
 		
-		//Define Classificador J48
-		J48 classificador = new J48();
-		
-		try {
-			classificador.buildClassifier(treino);
-			// evaluate classifier and print some statistics
-			 Evaluation eval = new Evaluation(treino);
-			 
-			 eval.evaluateModel(classificador, teste);
-			 System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
-			
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		
 	}

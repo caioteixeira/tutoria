@@ -34,10 +34,8 @@ public class Classificador {
 			classificador.buildClassifier(treino);
 			// evaluate classifier and print some statistics
 			 Evaluation eval = new Evaluation(treino);
-			 
-			 eval.evaluateModel(classificador, teste);
-			 System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
-			
+			 eval.evaluateModel(classificador, treino);
+			 System.out.println(eval.toSummaryString("\nResults\n======\n", false));
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

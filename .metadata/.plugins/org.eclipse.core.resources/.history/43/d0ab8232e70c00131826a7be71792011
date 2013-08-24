@@ -1,11 +1,9 @@
 import weka.core.Instances;
-import weka.classifiers.Evaluation;
 import weka.classifiers.trees.J48;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
 
 
 public class Classificador {
@@ -32,13 +30,7 @@ public class Classificador {
 		
 		try {
 			classificador.buildClassifier(treino);
-			// evaluate classifier and print some statistics
-			 Evaluation eval = new Evaluation(treino);
-			 
-			 eval.evaluateModel(classificador, teste);
-			 System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
-			
-			
+			System.out.println(classificador.graph());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
