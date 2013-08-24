@@ -1,0 +1,25 @@
+import weka.core.Instances;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Classificador {
+	public static void main(String[] args) {
+		//Cria instancias de treino e teste.
+		BufferedReader bfTreino;
+		BufferedReader bfTeste;
+		try {
+			bfTreino = new BufferedReader(new FileReader("/Arffs/BaseAprendizado.arff"));
+			bfTeste = new BufferedReader(new FileReader("/Arffs/BaseTeste.arff"));
+		} catch (FileNotFoundException e) {
+			System.out.println("Arquivo(s) de base não foram encontrados");
+			e.printStackTrace();
+			return;
+		}
+		System.out.println("Teste");
+		
+		
+		
+	}
+
+}

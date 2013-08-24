@@ -53,7 +53,7 @@ public class LeitorXML {
 		File saidaArquivo = new File("saida.arff");
 		File arquivoXML = new File(nomeDoArquivo);
 		
-		for(int i = 0; i<50; i++)
+		for(int i = 50; i<64; i++)
 		{
 			arquivoXML = new File(nomeDoArquivo+"/trial"+(i+1)+".xml");
 			

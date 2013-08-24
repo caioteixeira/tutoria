@@ -1,0 +1,40 @@
+import weka.core.Instances;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Classificador {
+	public static void main(String[] args) {
+		//Cria instancias de treino e teste.
+		
+		Instances treino = inicializaInstancias("Arff/BaseAprendizado.arff");
+		Instances teste = inicializaInstancias("Arff/BaseTeste.arff");
+		if(treino == null||teste == null )
+		{
+			System.out.println("Instancias não foram inicializadas, abortando programa");
+			return;
+		}
+		System.out.println(";D");
+		
+		
+	}
+	private static Instances inicializaInstancias(String a)
+	{
+		BufferedReader br;
+		Instances instancia;
+		try {
+			br = new BufferedReader(new FileReader(a));
+			instancia = new Instances(br);
+			
+		} catch (IOException e) {
+			//Encerra o programa caso não encontre arquivos de base
+			System.out.println("Arquivo(s) de base não foram encontrados/Erro de leitura de arquivos");
+			e.printStackTrace();
+			return null;
+		}
+		return instancia;
+		
+	}
+
+}
