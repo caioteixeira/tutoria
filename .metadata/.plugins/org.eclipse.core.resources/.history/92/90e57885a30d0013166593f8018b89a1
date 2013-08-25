@@ -1,9 +1,12 @@
 import weka.core.Instances;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.J48;
+import weka.core.Attribute;
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Random;
 
 
 
@@ -26,19 +29,28 @@ public class Classificador {
 		treino.setClassIndex(treino.numAttributes() - 1);
 		teste.setClassIndex(teste.numAttributes() - 1);
 		
+		for(int i = 0; i<treino.numAttributes();i++)
+		{
+			Attribute a = treino.attribute(i);
+			System.out.println(a.name());
+		}
+		
+		
 		//Define Classificador J48
 		J48 classificador = new J48();
 		
 		
+		
+		
 		try {
-			//Treina classificador com base no arquivo Arff de treino
 			classificador.buildClassifier(treino);
-			
-			
-			//Avalia o classificador com base no arquivo Arff de teste e imprime estatisticas
-			Evaluation eval = new Evaluation(treino);
-			eval.evaluateModel(classificador, teste);
-			System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
+			// evaluate classifier and print some statistics
+			 Evaluation eval = new Evaluation(treino);
+			 
+			 eval.evaluateModel(classificador, teste);
+			 
+			 //eval.crossValidateModel(classificador, teste, 10, new Random(1));
+			 System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
 			 
 			
 		} catch (Exception e) {
@@ -48,7 +60,6 @@ public class Classificador {
 		
 		
 	}
-	//Inicializa instancias com base em arquivos .ARFF
 	private static Instances inicializaInstancias(String a)
 	{
 		BufferedReader br;
@@ -59,7 +70,7 @@ public class Classificador {
 			br.close();
 			
 		} catch (IOException e) {
-			//Retorna null caso não encontre arquivos de base, avisa em caso de erro
+			//Encerra o programa caso não encontre arquivos de base
 			System.out.println("Arquivo(s) de base não foram encontrados/Erro de leitura de arquivos");
 			e.printStackTrace();
 			

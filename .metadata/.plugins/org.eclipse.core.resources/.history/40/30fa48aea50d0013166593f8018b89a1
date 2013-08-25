@@ -32,11 +32,11 @@ public class Classificador {
 		
 		try {
 			//Treina classificador com base no arquivo Arff de treino
-			classificador.buildClassifier(treino);
+			classificador.buildClassifier(teste);
 			
 			
 			//Avalia o classificador com base no arquivo Arff de teste e imprime estatisticas
-			Evaluation eval = new Evaluation(treino);
+			Evaluation eval = new Evaluation(teste);
 			eval.evaluateModel(classificador, teste);
 			System.out.println(eval.toSummaryString("\nResultados\n======\n", false));
 			 
