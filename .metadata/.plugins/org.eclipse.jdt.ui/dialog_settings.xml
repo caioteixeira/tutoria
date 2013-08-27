@@ -16,6 +16,21 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="FatJarPackageWizard">
+		<item value="C:\Users\Caio\Dropbox\EACH\Tutoria\Classificador Minimal\Classificador.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="Classificador - Classificador Minimal" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="C:\Users\Caio\Documents\GitHub\tutoria" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Caio\Dropbox\EACH\Tutoria\Classificador Minimal\Classificador.jar"/>
+			<item value="C:\Users\Caio\Dropbox\EACH\Tutoria\Classificador Minimal\classificadorMinimal.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\Caio\Documents\GitHub\tutoria.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="NewClassWizardPage">

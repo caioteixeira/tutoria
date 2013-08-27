@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="weka.core.Instances"/>
 <fullyQualifiedTypeName name="weka.classifiers.trees.J48"/>
 <fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="weka.core.Attribute"/>
 </qualifiedTypeNameHistroy>
