@@ -278,12 +278,12 @@ public class Context {
 		{
 			//Verifica se há atributo colour declarado, se não retorna valor padrão "white"
 			Element atributo = (Element) listaAtributos.item(j);
-			if(atributo.getAttribute("NAME").equals("others"))
+			if(atributo.getAttribute("NAME").equals("other"))
 			{
 				return atributo.getAttribute("VALUE");
 			}
 		}
-		return "white";
+		return "w";
 	}
 	//Retorna tipo do elemento
 	private String tipoDoElemento(Element elemento)

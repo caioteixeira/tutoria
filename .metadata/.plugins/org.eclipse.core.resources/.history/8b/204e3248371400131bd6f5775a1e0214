@@ -278,7 +278,7 @@ public class Context {
 		{
 			//Verifica se há atributo colour declarado, se não retorna valor padrão "white"
 			Element atributo = (Element) listaAtributos.item(j);
-			if(atributo.getAttribute("NAME").equals("others"))
+			if(atributo.getAttribute("NAME").equals("other"))
 			{
 				return atributo.getAttribute("VALUE");
 			}
@@ -342,13 +342,12 @@ public class Context {
 		for(int i = 0; i<listaObjetos.getLength();i++)
 		{
 			Element elemento = (Element)listaObjetos.item(i);
-			System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
 			if(elemento.getAttribute("FUNCTION").equals("distractor-landmark"))
 			{
-				//System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
+				System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
 				if(corDoElemento(elemento).equals(corLandmark))
 				{
-					//System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
+					System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
 					return 0;
 				}
 					

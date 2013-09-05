@@ -78,7 +78,7 @@ public class LeitorXML {
 	 */
 	public static String[][] inicializaTabelaContextos(String[] contextosIncluidos)
 	{
-		String[][] tabelaSaida = new String[contextosIncluidos.length][10];
+		String[][] tabelaSaida = new String[contextosIncluidos.length][9];
 		for(int i = 0; i < contextosIncluidos.length; i++)
 		{
 			Context context = new Context(contextosIncluidos[i]);
@@ -91,7 +91,6 @@ public class LeitorXML {
 			tabelaSaida[i][6] = context.getHPosTarget();
 			tabelaSaida[i][7] = String.valueOf(context.getQuantObjetosHPosTarget());
 			tabelaSaida[i][8] = String.valueOf(context.getQuantObjetosTipoLandmark());
-			tabelaSaida[i][9] = String.valueOf(context.getContextType());
 		}
 		return tabelaSaida;
 	}
@@ -158,8 +157,8 @@ public class LeitorXML {
 			return;
 		printWriter.print(trial); //Imprime o nome do trial
 		printWriter.print(",");
-		//printWriter.print(id); //Imprime o id
-		//printWriter.print(",");
+		printWriter.print(id); //Imprime o id
+		printWriter.print(",");
 		//ATRIBUTOS FIXOS
 		printWriter.print(tabelaContextos[i][1]); //Imprime o tipo do target
 		printWriter.print(",");
@@ -176,8 +175,6 @@ public class LeitorXML {
 		printWriter.print(tabelaContextos[i][7]); //Imprime o numero de objetos com o mesmo hPos do target
 		printWriter.print(",");
 		printWriter.print(tabelaContextos[i][8]); //Imprime o numero de objetos com o mesmo tipo do Landmark
-		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][9]); //Imprime o numero de objetos com o mesmo tipo do Landmark
 		printWriter.print(",");
 		//ATRIBUTOS DO TRIAL
 		printWriter.print(elemento.getAttribute("LENGTH")); //Imprime o atributo Length do trial

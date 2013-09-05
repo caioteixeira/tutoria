@@ -177,7 +177,7 @@ public class LeitorXML {
 		printWriter.print(",");
 		printWriter.print(tabelaContextos[i][8]); //Imprime o numero de objetos com o mesmo tipo do Landmark
 		printWriter.print(",");
-		printWriter.print(tabelaContextos[i][9]); //Imprime o numero de objetos com o mesmo tipo do Landmark
+		printWriter.print(tabelaContextos[i][9]); //Imprime se o context é abs
 		printWriter.print(",");
 		//ATRIBUTOS DO TRIAL
 		printWriter.print(elemento.getAttribute("LENGTH")); //Imprime o atributo Length do trial

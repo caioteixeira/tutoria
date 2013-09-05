@@ -81,24 +81,6 @@ public class Context {
 		
 	}
 	*/
-	//Retorna a cor do Landmark
-	public String getCorLandmark()
-	{
-		NodeList listaObjetos = context.getElementsByTagName("ENTITY");
-		//Percorre objetos
-		for(int i = 0; i < listaObjetos.getLength(); i++)
-		{
-			Element elemento = (Element)listaObjetos.item(i);
-			//Verifica se é o target
-			if(elemento.getAttribute("FUNCTION").equals("target-landmark"))
-			{
-				return corDoElemento(elemento);
-			}
-		}
-		return "";
-		
-	}
-		
 	//Retorna o tipo do target
 	public String getTipoTarget()
 
@@ -278,7 +260,7 @@ public class Context {
 		{
 			//Verifica se há atributo colour declarado, se não retorna valor padrão "white"
 			Element atributo = (Element) listaAtributos.item(j);
-			if(atributo.getAttribute("NAME").equals("others"))
+			if(atributo.getAttribute("NAME").equals("colour"))
 			{
 				return atributo.getAttribute("VALUE");
 			}
@@ -332,32 +314,5 @@ public class Context {
 		}
 		return "";
 	}
-	
-	//Define se a classe do context é abs ou proj
-	public int getContextType()
-	{
-		String corLandmark = getCorLandmark(); 
-		System.out.println(corLandmark);
-		NodeList listaObjetos = context.getElementsByTagName("ENTITY");
-		for(int i = 0; i<listaObjetos.getLength();i++)
-		{
-			Element elemento = (Element)listaObjetos.item(i);
-			System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
-			if(elemento.getAttribute("FUNCTION").equals("distractor-landmark"))
-			{
-				//System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
-				if(corDoElemento(elemento).equals(corLandmark))
-				{
-					//System.out.println(corDoElemento(elemento)+"\t"+ corLandmark);
-					return 0;
-				}
-					
-				
-			}
-		}
-		return 1;
-	}
-	
-	
 }
 
