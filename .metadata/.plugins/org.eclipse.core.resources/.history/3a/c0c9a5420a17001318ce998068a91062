@@ -1,4 +1,3 @@
-import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Attribute;
 import weka.classifiers.Classifier;
@@ -16,7 +15,6 @@ public class Classificador {
 	
 	Classificador(){
 		try {
-			//Carrega modelo gerado no Weka
 			classificador = (Classifier) weka.core.SerializationHelper.read("classificador.model");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -24,32 +22,14 @@ public class Classificador {
 		}
 	}
 	
-	private Boolean underspecify(int contextsize, int samevpos, String hpos, int samehpos, int sametypelandmark, Boolean abs)
-	{
-		Instance inst = new Instance(6);
-		
-		
-		
-		
-		return abs;	
-	}
-	
 	public void testa(){
 		Instances teste = inicializaInstancias("training.arff");
-		teste.setClassIndex(teste.numAttributes() - 1);
 		
 		try {
 			Evaluation eTest = new Evaluation(teste);
 			eTest.evaluateModel(classificador, teste);
 			
 			System.out.println(eTest.toSummaryString("\nResultados\n======\n", false));
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			double a = classificador.classifyInstance(teste.instance(7));
-			System.out.println(teste.classAttribute().value((int) a));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

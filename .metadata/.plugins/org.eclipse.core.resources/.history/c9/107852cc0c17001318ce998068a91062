@@ -48,8 +48,9 @@ public class Classificador {
 			e.printStackTrace();
 		}
 		try {
-			double a = classificador.classifyInstance(teste.instance(7));
-			System.out.println(teste.classAttribute().value((int) a));
+			double a = classificador.classifyInstance(teste.instance(14));
+			teste.instance(15).setClassValue(a);
+			System.out.println(teste.instance(15).toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

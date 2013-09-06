@@ -5,4 +5,6 @@
 <fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="weka.core.Attribute"/>
+<fullyQualifiedTypeName name="weka.classifiers.Classifier"/>
+<fullyQualifiedTypeName name="weka.core.Instance"/>
 </qualifiedTypeNameHistroy>
