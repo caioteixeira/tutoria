@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DOMAIN>
+<CONTEXT ID="room-1">
+<ENTITY ID="d1"/>
+<ENTITY ID="d2"/>
+<ENTITY ID="d3"/>
+<ENTITY ID="d4"/>
+<ENTITY ID="a1"/>
+<ENTITY ID="a2"/>
+<ENTITY ID="p1"/>
+<ENTITY ID="s1"/>
+<ENTITY ID="t1"/>
+<ENTITY ID="b3"/>
+<ENTITY ID="b4"/>
+<ENTITY ID="b10"/>
+</CONTEXT>
+<CONTEXT ID="room-2">
+<ENTITY ID="d5"/>
+<ENTITY ID="flower1"/>
+<ENTITY ID="b2"/>
+<ENTITY ID="b6"/>
+<ENTITY ID="b7"/>
+<ENTITY ID="b8"/>
+<ENTITY ID="b1"/>
+</CONTEXT>
+<CONTEXT ID="room-3">
+<ENTITY ID="d4"/>
+<ENTITY ID="d6"/>
+<ENTITY ID="d7"/>
+<ENTITY ID="p2"/>
+<ENTITY ID="b11"/>
+</CONTEXT>
+<CONTEXT ID="room-4">
+<ENTITY ID="d8"/>
+<ENTITY ID="d9"/>
+<ENTITY ID="couch1"/>
+<ENTITY ID="b19"/>
+</CONTEXT>
+<CONTEXT ID="room-5">
+<ENTITY ID="d1"/>
+<ENTITY ID="b5"/>
+</CONTEXT>
+<CONTEXT ID="room-6">
+<ENTITY ID="d9"/>
+<ENTITY ID="d10"/>
+<ENTITY ID="d11"/>
+<ENTITY ID="b14"/>
+<ENTITY ID="b20"/>
+</CONTEXT>
+<CONTEXT ID="room-7">
+<ENTITY ID="d10"/>
+<ENTITY ID="lamp1"/>
+<ENTITY ID="b15"/>
+<ENTITY ID="b17"/>
+<ENTITY ID="b18"/>
+</CONTEXT>
+<CONTEXT ID="room-8">
+<ENTITY ID="d11"/>
+<ENTITY ID="d12"/>
+<ENTITY ID="chair1"/>
+<ENTITY ID="b13"/>
+<ENTITY ID="b12"/>
+</CONTEXT>
+</DOMAIN>

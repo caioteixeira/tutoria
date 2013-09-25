@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="1" GENDER="m" AGE="17" DURATION="6.72">
+	<CONTEXT ID ="abs1" TARGET="e2" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="à direita do quadrado vermelho e à esquerda do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="others" VALUE="right(q1)" />
+			<ATTRIBUTE NAME="left" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" TARGET="e2" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela à direita do quadrado branco e à esquerda dos quadrados vermelhos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="left(q2-q3-q4)" />
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" TARGET="e3" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela à direita dos cinco quadrados paralelos e à esquerda do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="right(q1..q5)" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" TARGET="e1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="5" WORD-STRING ="a estrela à direita do circulo vermelho e do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="c3-q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" TARGET="e1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="a estrela à direita do quadrado vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="right" VALUE="q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" TARGET="e2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="a estrela à esquerda do quadrado branco à esquerda dos quadrados vermelhos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="left(q1..q5)" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" TARGET="e5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="a estrela entre os quadrados branco e vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="between(q1-q2)" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" TARGET="e5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="a estrela à direita do quadrado branco e a sudoeste do circulo vermelho">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="southwest(c3)" />
+			<ATTRIBUTE NAME="right" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" TARGET="e2" REFERENCE-TYPE ="no-landmark" MINIMAL ="no" LENGTH ="3" WORD-STRING ="a estrela entre os quadrados brancos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="between(q1..q2)" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" TARGET="e4" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela à esquerda do quadrado branco e à direita dos dois quadrados paralelos">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="right(q1..q2)" />
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" TARGET="e2" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="4" WORD-STRING ="a estrela à direita dos três quadrados paralelos e à esquerda do quadrado branco">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="type" VALUE="star" />
+			<ATTRIBUTE NAME="others" VALUE="right(q1..q3)" />
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>
