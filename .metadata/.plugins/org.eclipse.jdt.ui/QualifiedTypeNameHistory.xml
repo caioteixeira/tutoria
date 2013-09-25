@@ -7,4 +7,10 @@
 <fullyQualifiedTypeName name="weka.core.Attribute"/>
 <fullyQualifiedTypeName name="weka.classifiers.Classifier"/>
 <fullyQualifiedTypeName name="weka.core.Instance"/>
+<fullyQualifiedTypeName name="javax.xml.transform.dom.DOMSource"/>
+<fullyQualifiedTypeName name="javax.xml.transform.stream.StreamResult"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="javax.xml.transform.TransformerFactory"/>
+<fullyQualifiedTypeName name="javax.xml.transform.Transformer"/>
+<fullyQualifiedTypeName name="javax.xml.transform.OutputKeys"/>
 </qualifiedTypeNameHistroy>

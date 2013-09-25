@@ -1,9 +1,0 @@
-public class ClassificadorTeste {
-	public static void main(String[] args) {
-		Classificador a = new Classificador();
-		
-		//a.testa();
-		a.underspecify(10,2,"left",3,4,true);
-		
-	}
-}
