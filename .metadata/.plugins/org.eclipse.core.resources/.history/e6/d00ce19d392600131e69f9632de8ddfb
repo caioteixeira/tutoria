@@ -117,8 +117,7 @@ public class Conversor {
 					Element novoAtributo = docSaida.createElement("ATTRIBUTE");
 					novoAtributo.setAttribute("NAME", "type");
 					novoAtributo.setAttribute("VALUE", atributo.getAttribute("VALUE"));
-					entity.appendChild(novoAtributo);
-					break;
+					
 				default:
 					continue;
 			}
@@ -137,7 +136,6 @@ public class Conversor {
 			Transformer transformer = transFactory.newTransformer();
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount","4");
 			transformer.transform(source, result);
 		} catch (TransformerException e) {
 			e.printStackTrace();

@@ -61,8 +61,6 @@ public class Conversor {
 			
 			adicionaContext(raizAtomic, raizSaida, docSaida);
 			
-			//docSaida.normalizeDocument();
-			
 			salvaXML(docSaida, arquivoXMLSaida);
 		} 
 		catch (ParserConfigurationException e) {
@@ -99,30 +97,15 @@ public class Conversor {
 			Element entityAtomic = (Element)entitysAtomic.item(i);
 			entity.setAttribute("ID", entityAtomic.getAttribute("ID"));
 			//TODO:Adicionar atributo Function
-			adicionaAtributos(entityAtomic, entity,docSaida);
+			
 			context.appendChild(entity);
 		}
 		
 		
 	}
-	private static void adicionaAtributos(Element entityAtomic, Element entity, Document docSaida)
+	private static void adicionaAtributos(Element entityAtomic, Element entity, Document codSaida)
 	{
 		NodeList atributosAtomic = entityAtomic.getElementsByTagName("ATTRIBUTE");
-		for(int i = 0;i<atributosAtomic.getLength(); i++)
-		{
-			Element atributo = (Element)atributosAtomic.item(i);
-			switch(atributo.getAttribute("NAME"))
-			{
-				case "type":
-					Element novoAtributo = docSaida.createElement("ATTRIBUTE");
-					novoAtributo.setAttribute("NAME", "type");
-					novoAtributo.setAttribute("VALUE", atributo.getAttribute("VALUE"));
-					entity.appendChild(novoAtributo);
-					break;
-				default:
-					continue;
-			}
-		}
 	}
 	
 	private static void salvaXML(Document doc, File arquivoXML)
@@ -137,7 +120,6 @@ public class Conversor {
 			Transformer transformer = transFactory.newTransformer();
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount","4");
 			transformer.transform(source, result);
 		} catch (TransformerException e) {
 			e.printStackTrace();

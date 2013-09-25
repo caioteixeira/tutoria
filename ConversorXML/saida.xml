@@ -1,64 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <DOMAIN>
-<CONTEXT ID="room-1">
-<ENTITY ID="d1"/>
-<ENTITY ID="d2"/>
-<ENTITY ID="d3"/>
-<ENTITY ID="d4"/>
-<ENTITY ID="a1"/>
-<ENTITY ID="a2"/>
-<ENTITY ID="p1"/>
-<ENTITY ID="s1"/>
-<ENTITY ID="t1"/>
-<ENTITY ID="b3"/>
-<ENTITY ID="b4"/>
-<ENTITY ID="b10"/>
-</CONTEXT>
-<CONTEXT ID="room-2">
-<ENTITY ID="d5"/>
-<ENTITY ID="flower1"/>
-<ENTITY ID="b2"/>
-<ENTITY ID="b6"/>
-<ENTITY ID="b7"/>
-<ENTITY ID="b8"/>
-<ENTITY ID="b1"/>
-</CONTEXT>
-<CONTEXT ID="room-3">
-<ENTITY ID="d4"/>
-<ENTITY ID="d6"/>
-<ENTITY ID="d7"/>
-<ENTITY ID="p2"/>
-<ENTITY ID="b11"/>
-</CONTEXT>
-<CONTEXT ID="room-4">
-<ENTITY ID="d8"/>
-<ENTITY ID="d9"/>
-<ENTITY ID="couch1"/>
-<ENTITY ID="b19"/>
-</CONTEXT>
-<CONTEXT ID="room-5">
-<ENTITY ID="d1"/>
-<ENTITY ID="b5"/>
-</CONTEXT>
-<CONTEXT ID="room-6">
-<ENTITY ID="d9"/>
-<ENTITY ID="d10"/>
-<ENTITY ID="d11"/>
-<ENTITY ID="b14"/>
-<ENTITY ID="b20"/>
-</CONTEXT>
-<CONTEXT ID="room-7">
-<ENTITY ID="d10"/>
-<ENTITY ID="lamp1"/>
-<ENTITY ID="b15"/>
-<ENTITY ID="b17"/>
-<ENTITY ID="b18"/>
-</CONTEXT>
-<CONTEXT ID="room-8">
-<ENTITY ID="d11"/>
-<ENTITY ID="d12"/>
-<ENTITY ID="chair1"/>
-<ENTITY ID="b13"/>
-<ENTITY ID="b12"/>
-</CONTEXT>
+    <CONTEXT ID="room-1">
+        <ENTITY ID="d1">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d2">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d3">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d4">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="a1">
+            <ATTRIBUTE NAME="type" VALUE="alarm"/>
+        </ENTITY>
+        <ENTITY ID="a2">
+            <ATTRIBUTE NAME="type" VALUE="alarm"/>
+        </ENTITY>
+        <ENTITY ID="p1">
+            <ATTRIBUTE NAME="type" VALUE="picture"/>
+        </ENTITY>
+        <ENTITY ID="s1">
+            <ATTRIBUTE NAME="type" VALUE="safe"/>
+        </ENTITY>
+        <ENTITY ID="t1">
+            <ATTRIBUTE NAME="type" VALUE="safe"/>
+        </ENTITY>
+        <ENTITY ID="b3">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b4">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b10">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-2">
+        <ENTITY ID="d5">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="flower1">
+            <ATTRIBUTE NAME="type" VALUE="flower"/>
+        </ENTITY>
+        <ENTITY ID="b2">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b6">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b7">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b8">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b1">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-3">
+        <ENTITY ID="d4">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d6">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d7">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="p2">
+            <ATTRIBUTE NAME="type" VALUE="picture"/>
+        </ENTITY>
+        <ENTITY ID="b11">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-4">
+        <ENTITY ID="d8">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d9">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="couch1">
+            <ATTRIBUTE NAME="type" VALUE="couch"/>
+        </ENTITY>
+        <ENTITY ID="b19">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-5">
+        <ENTITY ID="d1">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="b5">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-6">
+        <ENTITY ID="d9">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d10">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d11">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="b14">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b20">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-7">
+        <ENTITY ID="d10">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="lamp1">
+            <ATTRIBUTE NAME="type" VALUE="lamp"/>
+        </ENTITY>
+        <ENTITY ID="b15">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b17">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b18">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-8">
+        <ENTITY ID="d11">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="d12">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY ID="chair1">
+            <ATTRIBUTE NAME="type" VALUE="chair"/>
+        </ENTITY>
+        <ENTITY ID="b13">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY ID="b12">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
 </DOMAIN>
