@@ -215,4 +215,24 @@ public class ConversorMundo {
 			e.printStackTrace();
 		}
 	}
+	//Retorna de que sala o objeto é 
+	public static String salaObjeto(String id, Document atomic)
+	{
+		Element raiz = atomic.getDocumentElement();
+		NodeList domains = raiz.getElementsByTagName("DOMAIN");
+		for(int i = 0; i<domains.getLength();i++)
+		{
+			Element domain = (Element) domains.item(i);
+			NodeList entitys = domain.getElementsByTagName("ENTITY");
+			for(int j = 0; j<entitys.getLength(); j++)
+			{
+				Element entity = (Element) entitys.item(j);
+				if(entity.getAttribute("ID").equals(id))
+				{
+					return domain.getAttribute("ID");
+				}
+			}
+		}
+		return "";
+	}
 }

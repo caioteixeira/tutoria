@@ -21,10 +21,12 @@ import org.xml.sax.SAXException;
 
 public class ConversorTrial {
 	static DocumentBuilder db;
-	public static void processaXML(File descriptions)
+	public static void processaXML(File descriptions, File atomic)
 	{
 		//Inicializa Parsers DOM
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		dbf.setIgnoringElementContentWhitespace(true);
+		//dbf.setValidating(true);
 		
 		
 		//Nota: Blocos Try/Catch são obrigatórios
@@ -32,13 +34,14 @@ public class ConversorTrial {
 			db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
 			Document doc = db.parse(descriptions);
+			Document docAtomic = db.parse(atomic);
 			
 			//Define elemento raiz 
 			Element raiz = doc.getDocumentElement();
 			
 			//System.out.println(raiz.getTagName());
 			
-			escreveTrials(raiz);
+			escreveTrials(raiz, doc, docAtomic);
 			
 			
 		} 
@@ -53,32 +56,49 @@ public class ConversorTrial {
 			e.printStackTrace();
 		}
 	}
-	private static void escreveTrials(Element raiz)
+	private static void escreveTrials(Element raiz, Document descriptions, Document atomic)
 	{
 		NodeList expressoes = raiz.getElementsByTagName("EXPRESSION");
 		for(int i = 0; i < expressoes.getLength(); i++)
 		{
 			File arquivoTrial;
 			Element expressao = (Element)expressoes.item(i);
-			arquivoTrial = new File("trials/"+expressao.getAttribute("PLAYER_ID")+".xml");
+			String playerId = expressao.getAttribute("PLAYER_ID");
+			//System.out.print(playerId);
+			arquivoTrial = new File("trials/"+playerId+".xml");
 			Document doc;
-			Element raizSaida;
 			try {
 				doc = db.parse(arquivoTrial);
-				
+				escreveContext(expressao,  atomic, doc);
 			
 			} catch (IOException | SAXException e) {
 				doc = db.newDocument();
 				Element trial = doc.createElement("TRIAL");
-				trial.setAttribute("ID", expressao.getAttribute("PLAYER_ID"));
+				trial.setAttribute("ID", playerId);
 				doc.appendChild(trial);
+				escreveContext(expressao, atomic, doc);
 			}
-			raizSaida = doc.getDocumentElement();
 			
 			salvaXML(doc, arquivoTrial);
 		}	
 	}
-	
+	private static void escreveContext(Element expressao, Document atomic, Document docTrial )
+	{
+		String target = expressao.getAttribute("TARGET_ID");
+		//docTrial.normalizeDocument();
+		Element raiz = docTrial.getDocumentElement();
+		Element context = docTrial.createElement("CONTEXT");
+		
+		//System.out.print(" "+target+"\n");
+		/*context.setAttribute("TARGET", target);
+		context.setAttribute("ID", ConversorMundo.salaObjeto(target, atomic));
+		Element atributeSet = docTrial.createElement("ATTRIBUTE-SET");
+		context.appendChild(atributeSet);*/
+		
+		//docTrial.appendChild(raiz);
+		raiz.appendChild(context);
+		
+	}
 	public static boolean foiCitado(String id, File descriptions)
 	{
 		//Inicializa Parsers DOM
@@ -126,10 +146,15 @@ public class ConversorTrial {
 			StreamResult result = new StreamResult(new FileOutputStream(arquivoXML));
 			TransformerFactory transFactory = TransformerFactory.newInstance();
 			
+			
 			Transformer transformer = transFactory.newTransformer();
+			
 			transformer.setOutputProperty(OutputKeys.METHOD, "xml");
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount","4");
+			//transformer.setOutputProperty(OutputKeys.STANDALONE, "yes");
+			//transformer.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC, "yes");
+			transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 			transformer.transform(source, result);
 		} catch (TransformerException e) {
 			e.printStackTrace();
