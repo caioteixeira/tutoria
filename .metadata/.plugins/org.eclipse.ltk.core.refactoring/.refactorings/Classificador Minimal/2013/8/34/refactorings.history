@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Classificador.java&apos; to &apos;Classificador Reference Type&apos;&#x0D;&#x0A;- Original project: &apos;Classificador Minimal&apos;&#x0D;&#x0A;- Destination element: &apos;Classificador Reference Type&apos;&#x0D;&#x0A;- Original element: &apos;Classificador.java&apos;" description="Copy compilation unit" destination="=Classificador Reference Type" element1="/&lt;{Classificador.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1377456870670" units="1" version="1.0"/>
+</session>

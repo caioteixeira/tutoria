@@ -1,0 +1,81 @@
+import weka.core.FastVector;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.Attribute;
+import weka.classifiers.Classifier;
+
+
+public class ClassificadorUnderspecify {
+	
+	private Boolean underspecify(int contextsize, int samevpos, String hpos, int samehpos, int sametypelandmark, Boolean abs)
+	{
+		//Carrega classificador
+		//Alterar essa variavel para definir outra localização do modelo
+		String modelo = "classificador.model";
+		Classifier classificador;
+		try {
+			//Carrega modelo gerado no Weka
+			classificador = (Classifier) weka.core.SerializationHelper.read(modelo);
+			
+			//Declaração de atributos
+			FastVector listaAtributos= new FastVector(7);
+			Attribute contextSizeAtt = new Attribute("contextsize");
+			Attribute samevposAtt = new Attribute("samevpos");
+				//Declara atributo hpos e valores possiveis
+			FastVector valoresHpos= new FastVector(2);
+			valoresHpos.addElement("right");
+			valoresHpos.addElement("left");
+			Attribute hposAtt = new Attribute("hpos",valoresHpos);
+			Attribute samehposAtt =  new Attribute("samehpos");
+			Attribute sametypelandmarkAtt = new Attribute("sametypelandmark");
+			Attribute absAtt = new Attribute("abs");
+				//Declara atributo ReferenceType e valores possiveis
+			FastVector valoresRef = new FastVector(3);
+			valoresRef.addElement("fully-spec");
+			valoresRef.addElement("under-spec");
+			valoresRef.addElement("others");
+			Attribute referencetypeAtt = new Attribute("referencetype",valoresRef);
+			
+			//Adiciona atributos na lista
+			listaAtributos.addElement(contextSizeAtt);
+			listaAtributos.addElement(samevposAtt);
+			listaAtributos.addElement(hposAtt);
+			listaAtributos.addElement(samehposAtt);
+			listaAtributos.addElement(sametypelandmarkAtt);
+			listaAtributos.addElement(absAtt);
+			listaAtributos.addElement(referencetypeAtt);
+			
+			//Cria dataSet
+			Instances teste = new Instances("teste", listaAtributos, 1);
+			teste.setClassIndex(teste.numAttributes() - 1);
+					
+			
+			//Inicializa instancia
+			Instance instancia = new Instance(7); 
+			instancia.setDataset(teste); 
+			instancia.setValue(0, contextsize);
+			instancia.setValue(1, samevpos);
+			instancia.setValue(2, hpos);
+			instancia.setValue(3, samehpos);
+			instancia.setValue(4, sametypelandmark);
+			instancia.setValue(5, abs?1:0);
+			instancia.setValue(6, "others"); //Define referenceType como others, apenas para incluir na instancia
+			
+			//adiciona instancia ao dataset
+			teste.add(instancia);
+			
+			
+			//Classifica
+			double a;
+			a = classificador.classifyInstance(teste.instance(0));
+			if(teste.classAttribute().value((int) a) == "under-spec")
+				return true;
+			else
+				return false;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
+		return false;
+	}
+}

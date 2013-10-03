@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TRIAL ID="62" GENDER="f" AGE="20" DURATION="8.11">
+	<CONTEXT ID ="abs1" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="ao lado do quadrilátero">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs3" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="que está à direita do quadrilátero">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="abs5" REFERENCE-TYPE ="fully-spec" MINIMAL ="no" LENGTH ="3" WORD-STRING ="que está ao lado do quadrilátero que não possui cor vermelha">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="landmark-others" VALUE="not-red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill1" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="ao lado do quadrilátero que possui uma circunferência vermelha ao seu lado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="red" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill2" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="próxima ao quadrilátero que tem ao lado uma circunferência">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c1-q3" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill3" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="que está ao lado esquerdo do quadrilátero e possui uma circunferência ao lado direito">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="c1-q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill4" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="3" WORD-STRING ="ao lado de um quadrilátero que possui uma circunferência ao seu lado">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="next" VALUE="c2-q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="fill5" REFERENCE-TYPE ="na" MINIMAL ="na" LENGTH ="4" WORD-STRING ="ao lado direito do quadrilátero que possui uma circunferência branca ao lado esquerdo">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="right" VALUE="c2-q2" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+			<ATTRIBUTE NAME="second-landmark-type" VALUE="circle" />
+			<ATTRIBUTE NAME="second-landmark-others" VALUE="white" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj1" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="que está ao lado direito do quadrilátero">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="right" VALUE="q1" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj3" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="que está à esquerda do quadrilátero">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q4" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+	<CONTEXT ID ="proj5" REFERENCE-TYPE ="under-spec" MINIMAL ="yes" LENGTH ="2" WORD-STRING ="que está ao lado esquerdo do quadrilátero">
+		<ATTRIBUTE-SET>
+			<ATTRIBUTE NAME="left" VALUE="q6" />
+			<ATTRIBUTE NAME="landmark-type" VALUE="box" />
+		</ATTRIBUTE-SET>
+	</CONTEXT>
+</TRIAL>
