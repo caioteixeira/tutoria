@@ -29,7 +29,7 @@ public class ConversorTrial {
 		//dbf.setValidating(true);
 		
 		
-		//Nota: Blocos Try/Catch são obrigatórios
+		//Nota: Blocos Try/Catch sï¿½o obrigatï¿½rios
 		try {
 			db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
@@ -90,13 +90,102 @@ public class ConversorTrial {
 		Element context = docTrial.createElement("CONTEXT");
 		
 		//System.out.print(" "+target+"\n");
-		/*context.setAttribute("TARGET", target);
+		context.setAttribute("TARGET", target);
 		context.setAttribute("ID", ConversorMundo.salaObjeto(target, atomic));
 		Element atributeSet = docTrial.createElement("ATTRIBUTE-SET");
-		context.appendChild(atributeSet);*/
+		escreveAtributosObjeto(expressao, atributeSet, docTrial);
+		context.appendChild(atributeSet);
 		
 		//docTrial.appendChild(raiz);
 		raiz.appendChild(context);
+		
+	}
+	private static void escreveAtributosObjeto(Element expressao, Element atributeSet, Document docTrial)
+	{
+		Element entityExpressao = (Element) expressao.getElementsByTagName("ENTITY").item(0);
+		if(entityExpressao!=null)
+		{
+			NodeList atributos = entityExpressao.getElementsByTagName("ATTRIBUTE");
+			for(int i = 0; i<atributos.getLength();i++)
+			{
+				Element atributo = (Element) atributos.item(i);
+				switch(atributo.getAttribute("NAME"))
+				{
+					case "type":
+						Element tipo = docTrial.createElement("ATTRIBUTE");
+						tipo.setAttribute("NAME","type");
+						tipo.setAttribute("VALUE", atributo.getAttribute("VALUE"));
+						atributeSet.appendChild(tipo);
+						break;
+					case "color":
+						Element cor = docTrial.createElement("ATTRIBUTE");
+						cor.setAttribute("NAME","others");
+						cor.setAttribute("VALUE", atributo.getAttribute("VALUE"));
+						atributeSet.appendChild(cor);
+						break;
+					
+				}
+			}
+		}
+		NodeList relactions = expressao.getElementsByTagName("RELATIONSHIP");
+		for(int i = 0; i < relactions.getLength(); i++)
+		{
+			Element relationship = (Element) relactions.item(i);
+			Element relation = (Element) relationship.getElementsByTagName("RELATION").item(0);
+			Element landmark = (Element) relationship.getElementsByTagName("ENTITY").item(0);
+			if(relation!=null)
+			{
+				Element atributoRelation = (Element) relation.getElementsByTagName("ATTRIBUTE").item(0);
+				String name = atributoRelation.getAttribute("VALUE");
+				switch(name)
+				{
+					case "left":
+						Element esquerda = docTrial.createElement("ATTRIBUTE");
+						esquerda.setAttribute("NAME","left");
+						esquerda.setAttribute("VALUE", relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(esquerda);
+						break;
+					case "right":
+						Element direita = docTrial.createElement("ATTRIBUTE");
+						direita.setAttribute("NAME","right");
+						direita.setAttribute("VALUE", relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(direita);
+						break;
+					case "corner":
+						Element canto = docTrial.createElement("ATTRIBUTE");
+						canto.setAttribute("NAME","others"); 
+						canto.setAttribute("VALUE", "corner("+relation.getAttribute("LANDMARK")+")");
+						atributeSet.appendChild(canto);
+						break;
+						
+				}
+			}
+			if(landmark!=null)
+			{
+				NodeList atributosLandmark = landmark.getElementsByTagName("ATTRIBUTE");
+				for(int j = 0; j<atributosLandmark.getLength();j++)
+				{
+					Element atributoLandmark = (Element) atributosLandmark.item(j);
+					String name = atributoLandmark.getAttribute("NAME");
+					
+					switch(name)
+					{
+						case "type":
+							Element tipo = docTrial.createElement("ATTRIBUTE");
+							tipo.setAttribute("NAME","landmark-type"); 
+							tipo.setAttribute("VALUE", atributoLandmark.getAttribute("VALUE"));
+							atributeSet.appendChild(tipo);
+							break;
+						case "color":
+							Element cor = docTrial.createElement("ATTRIBUTE");
+							cor.setAttribute("NAME","landmark-others"); 
+							cor.setAttribute("VALUE", atributoLandmark.getAttribute("VALUE"));
+							atributeSet.appendChild(cor);
+							break;
+					}
+				}
+			}
+		}
 		
 	}
 	public static boolean foiCitado(String id, File descriptions)
@@ -105,7 +194,7 @@ public class ConversorTrial {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		
-		//Nota: Blocos Try/Catch são obrigatórios
+		//Nota: Blocos Try/Catch sï¿½o obrigatï¿½rios
 		try {
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
@@ -114,7 +203,7 @@ public class ConversorTrial {
 			//Define elemento raiz 
 			Element raiz = doc.getDocumentElement();
 			
-			//Nodelist das expressões
+			//Nodelist das expressï¿½es
 			NodeList expressoes = raiz.getElementsByTagName("EXPRESSION");
 			
 			for(int i = 0; i<expressoes.getLength(); i++)

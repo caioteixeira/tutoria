@@ -11,7 +11,7 @@ public class Conversor {
 		File saidaTrial = new File("saidaTrial.xml");
 		File descriptions = new File("descriptions.xml");
 		
-		//ConversorMundo.processaXML(atomic,relation, descriptions, saida);
+		ConversorMundo.processaXML(atomic,relation, descriptions, saida);
 		ConversorTrial.processaXML(descriptions, atomic);
 
 	}
