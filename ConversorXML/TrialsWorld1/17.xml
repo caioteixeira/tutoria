@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TRIAL ID="17">
+    <CONTEXT ID="room-3" TARGET="b11">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="green"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-5" TARGET="b5">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-1" TARGET="b3">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="yellow"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-1" TARGET="b10">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+            <ATTRIBUTE NAME="up" VALUE="a1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="trap"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-1" TARGET="b4">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-5" TARGET="b5">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-4" TARGET="b19">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="next" VALUE="couch1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="couch"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-7" TARGET="b18">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="corner" VALUE="PLAYER"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="player"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-6" TARGET="b20">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="PLAYER"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="player"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+</TRIAL>

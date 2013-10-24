@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DOMAIN>
+    <CONTEXT ID="tutorial-room">
+        <ENTITY FUNCTION="landmark" ID="dt1">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="connecting-room-1">
+        <ENTITY FUNCTION="landmark" ID="d7">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d8">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b19">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="left" VALUE="p2"/>
+            <ATTRIBUTE NAME="next" VALUE="p2"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b20">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="p2">
+            <ATTRIBUTE NAME="type" VALUE="picture"/>
+            <ATTRIBUTE NAME="right" VALUE="b19"/>
+            <ATTRIBUTE NAME="next" VALUE="b19"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-4">
+        <ENTITY FUNCTION="landmark" ID="d7">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="a1">
+            <ATTRIBUTE NAME="type" VALUE="alarm"/>
+            <ATTRIBUTE NAME="straight" VALUE="p1"/>
+            <ATTRIBUTE NAME="next" VALUE="p1"/>
+            <ATTRIBUTE NAME="straight" VALUE="s1"/>
+            <ATTRIBUTE NAME="next" VALUE="s1"/>
+            <ATTRIBUTE NAME="straight" VALUE="t1"/>
+            <ATTRIBUTE NAME="next" VALUE="t1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="p1">
+            <ATTRIBUTE NAME="type" VALUE="picture"/>
+            <ATTRIBUTE NAME="next" VALUE="a1"/>
+            <ATTRIBUTE NAME="straight" VALUE="s1"/>
+            <ATTRIBUTE NAME="next" VALUE="s1"/>
+            <ATTRIBUTE NAME="straight" VALUE="t1"/>
+            <ATTRIBUTE NAME="next" VALUE="t1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="s1">
+            <ATTRIBUTE NAME="type" VALUE="safe"/>
+            <ATTRIBUTE NAME="next" VALUE="a1"/>
+            <ATTRIBUTE NAME="straight" VALUE="p1"/>
+            <ATTRIBUTE NAME="next" VALUE="p1"/>
+            <ATTRIBUTE NAME="straight" VALUE="t1"/>
+            <ATTRIBUTE NAME="next" VALUE="t1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="t1">
+            <ATTRIBUTE NAME="type" VALUE="safe"/>
+            <ATTRIBUTE NAME="next" VALUE="a1"/>
+            <ATTRIBUTE NAME="straight" VALUE="p1"/>
+            <ATTRIBUTE NAME="next" VALUE="p1"/>
+            <ATTRIBUTE NAME="straight" VALUE="s1"/>
+            <ATTRIBUTE NAME="next" VALUE="s1"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-1">
+        <ENTITY FUNCTION="landmark" ID="d1">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d2">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="left" VALUE="b4"/>
+            <ATTRIBUTE NAME="next" VALUE="b4"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d3">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b1">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="b2"/>
+            <ATTRIBUTE NAME="next" VALUE="b2"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b2">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="left" VALUE="b1"/>
+            <ATTRIBUTE NAME="next" VALUE="b1"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="b3"/>
+            <ATTRIBUTE NAME="next" VALUE="b3"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b3">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="slightlyleft" VALUE="b2"/>
+            <ATTRIBUTE NAME="next" VALUE="b2"/>
+            <ATTRIBUTE NAME="right" VALUE="b4"/>
+            <ATTRIBUTE NAME="next" VALUE="b4"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b4">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="d2"/>
+            <ATTRIBUTE NAME="next" VALUE="d2"/>
+            <ATTRIBUTE NAME="left" VALUE="b3"/>
+            <ATTRIBUTE NAME="next" VALUE="b3"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-2">
+        <ENTITY FUNCTION="landmark" ID="d3">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="left" VALUE="b5"/>
+            <ATTRIBUTE NAME="next" VALUE="b5"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d4">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d6">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="dt1">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b5">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="d3"/>
+            <ATTRIBUTE NAME="next" VALUE="d3"/>
+            <ATTRIBUTE NAME="leftaround" VALUE="lamp1"/>
+            <ATTRIBUTE NAME="next" VALUE="lamp1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="lamp1">
+            <ATTRIBUTE NAME="type" VALUE="lamp"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="b5"/>
+            <ATTRIBUTE NAME="next" VALUE="b5"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-3">
+        <ENTITY FUNCTION="landmark" ID="d5">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="left" VALUE="b6"/>
+            <ATTRIBUTE NAME="next" VALUE="b6"/>
+            <ATTRIBUTE NAME="left" VALUE="b5"/>
+            <ATTRIBUTE NAME="next" VALUE="b5"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d6">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="next" VALUE="a2"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d11">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="right" VALUE="b6"/>
+            <ATTRIBUTE NAME="next" VALUE="b6"/>
+            <ATTRIBUTE NAME="right" VALUE="b5"/>
+            <ATTRIBUTE NAME="next" VALUE="b5"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="a2">
+            <ATTRIBUTE NAME="type" VALUE="alarm"/>
+            <ATTRIBUTE NAME="straight" VALUE="d6"/>
+            <ATTRIBUTE NAME="next" VALUE="d6"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b6">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="d5"/>
+            <ATTRIBUTE NAME="next" VALUE="d5"/>
+            <ATTRIBUTE NAME="left" VALUE="d11"/>
+            <ATTRIBUTE NAME="next" VALUE="d11"/>
+            <ATTRIBUTE NAME="left" VALUE="b5"/>
+            <ATTRIBUTE NAME="next" VALUE="b5"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b7">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-5">
+        <ENTITY FUNCTION="landmark" ID="d8">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="left" VALUE="b18"/>
+            <ATTRIBUTE NAME="next" VALUE="b18"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="couch1"/>
+            <ATTRIBUTE NAME="next" VALUE="couch1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d9">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b18">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="d8"/>
+            <ATTRIBUTE NAME="next" VALUE="d8"/>
+            <ATTRIBUTE NAME="straight" VALUE="couch1"/>
+            <ATTRIBUTE NAME="next" VALUE="couch1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b17">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="couch1">
+            <ATTRIBUTE NAME="type" VALUE="couch"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="d8"/>
+            <ATTRIBUTE NAME="next" VALUE="d8"/>
+            <ATTRIBUTE NAME="straight" VALUE="b18"/>
+            <ATTRIBUTE NAME="next" VALUE="b18"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-6">
+        <ENTITY FUNCTION="landmark" ID="d9">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="slightlyleft" VALUE="b16"/>
+            <ATTRIBUTE NAME="next" VALUE="b16"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d5">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="left" VALUE="d4"/>
+            <ATTRIBUTE NAME="next" VALUE="d4"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d4">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="right" VALUE="d5"/>
+            <ATTRIBUTE NAME="next" VALUE="d5"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d10">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b13">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="b14"/>
+            <ATTRIBUTE NAME="next" VALUE="b14"/>
+            <ATTRIBUTE NAME="slightlyleft" VALUE="chair1"/>
+            <ATTRIBUTE NAME="next" VALUE="chair1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b14">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="left" VALUE="b13"/>
+            <ATTRIBUTE NAME="next" VALUE="b13"/>
+            <ATTRIBUTE NAME="left" VALUE="chair1"/>
+            <ATTRIBUTE NAME="next" VALUE="chair1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b15">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="b16"/>
+            <ATTRIBUTE NAME="next" VALUE="b16"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b16">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="d9"/>
+            <ATTRIBUTE NAME="next" VALUE="d9"/>
+            <ATTRIBUTE NAME="left" VALUE="b15"/>
+            <ATTRIBUTE NAME="next" VALUE="b15"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="chair1">
+            <ATTRIBUTE NAME="type" VALUE="chair"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="b13"/>
+            <ATTRIBUTE NAME="next" VALUE="b13"/>
+            <ATTRIBUTE NAME="right" VALUE="b14"/>
+            <ATTRIBUTE NAME="next" VALUE="b14"/>
+        </ENTITY>
+    </CONTEXT>
+    <CONTEXT ID="room-7">
+        <ENTITY FUNCTION="landmark" ID="d10">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="d11"/>
+            <ATTRIBUTE NAME="next" VALUE="d11"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="d11">
+            <ATTRIBUTE NAME="type" VALUE="door"/>
+            <ATTRIBUTE NAME="slightlyleft" VALUE="d10"/>
+            <ATTRIBUTE NAME="next" VALUE="d10"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="b8">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="left" VALUE="b9"/>
+            <ATTRIBUTE NAME="next" VALUE="b9"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b9">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="b8"/>
+            <ATTRIBUTE NAME="next" VALUE="b8"/>
+            <ATTRIBUTE NAME="left" VALUE="b10"/>
+            <ATTRIBUTE NAME="next" VALUE="b10"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b10">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="right" VALUE="b9"/>
+            <ATTRIBUTE NAME="next" VALUE="b9"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b11">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+        </ENTITY>
+        <ENTITY FUNCTION="target" ID="b12">
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="slightlyright" VALUE="flower1"/>
+            <ATTRIBUTE NAME="next" VALUE="flower1"/>
+        </ENTITY>
+        <ENTITY FUNCTION="landmark" ID="flower1">
+            <ATTRIBUTE NAME="type" VALUE="flower"/>
+            <ATTRIBUTE NAME="leftaround" VALUE="b12"/>
+            <ATTRIBUTE NAME="next" VALUE="b12"/>
+        </ENTITY>
+    </CONTEXT>
+</DOMAIN>

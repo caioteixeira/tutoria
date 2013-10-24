@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TRIAL ID="11">
+    <CONTEXT ID="room-2" TARGET="b5">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+            <ATTRIBUTE NAME="next" VALUE="lamp1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="lamp"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-1" TARGET="b2">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="green"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-3" TARGET="b6">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="green"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-7" TARGET="b12">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="red"/>
+            <ATTRIBUTE NAME="next" VALUE="flower1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="flower"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-3" TARGET="b6">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="green"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-7" TARGET="b12">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="red"/>
+            <ATTRIBUTE NAME="next" VALUE="flower1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="flower"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-7" TARGET="b9">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="blue"/>
+            <ATTRIBUTE NAME="next" VALUE="b10"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="button"/>
+            <ATTRIBUTE NAME="landmark-others" VALUE="yellow"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-5" TARGET="b18">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="green"/>
+            <ATTRIBUTE NAME="next" VALUE="couch1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="couch"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-7" TARGET="b10">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="yellow"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+	<CONTEXT ID="room-6" TARGET="b14">
+        <ATTRIBUTE-SET>
+            <ATTRIBUTE NAME="type" VALUE="button"/>
+            <ATTRIBUTE NAME="others" VALUE="red"/>
+            <ATTRIBUTE NAME="next" VALUE="chair1"/>
+            <ATTRIBUTE NAME="landmark-type" VALUE="chair"/>
+        </ATTRIBUTE-SET>
+    </CONTEXT>
+</TRIAL>

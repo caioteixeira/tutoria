@@ -26,7 +26,7 @@ public class ConversorMundo {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		
-		//Nota: Blocos Try/Catch são obrigatórios
+		//Nota: Blocos Try/Catch sao obrigatorios
 		try {
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
@@ -41,7 +41,7 @@ public class ConversorMundo {
 			Element raizRelation = docRelation.getDocumentElement();
 			
 			
-			//Verifica se há um elemento Domain, se não o cria
+			//Verifica se ha um elemento Domain, se nao o cria
 			Element raizSaida;
 			if(docSaida.getDocumentElement() == null)
 			{
@@ -88,7 +88,7 @@ public class ConversorMundo {
 			adicionaEntity(domainAtomic, domainRelation, context, XMLDescriptions, docSaida);
 			context.setAttribute("ID", id);
 			
-			//Adiciona o contexto como nó da raiz
+			//Adiciona o contexto como no da raiz
 			raizSaida.appendChild(context);
 		}
 	}
@@ -108,7 +108,7 @@ public class ConversorMundo {
 				return domain;
 			}
 		}
-		//Se não encontrar, retorna null
+		//Se nï¿½o encontrar, retorna null
 		return null;
 	}
 	
@@ -215,7 +215,7 @@ public class ConversorMundo {
 			e.printStackTrace();
 		}
 	}
-	//Retorna de que sala o objeto é 
+	//Retorna de que sala o objeto Ã©
 	public static String salaObjeto(String id, Document atomic)
 	{
 		Element raiz = atomic.getDocumentElement();

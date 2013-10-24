@@ -1,8 +1,11 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -12,27 +15,34 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 
 
 public class ConversorTrial {
+	static String xsl = "identacao.xsl";
 	static DocumentBuilder db;
-	public static void processaXML(File descriptions, File atomic)
+	static String dirDestino;
+	public static void processaXML(File descriptions, File atomic, String dirSaida)
 	{
+		dirDestino = dirSaida;
 		//Inicializa Parsers DOM
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		dbf.setIgnoringElementContentWhitespace(true);
 		//dbf.setValidating(true);
 		
-		
-		//Nota: Blocos Try/Catch s�o obrigat�rios
+		//Nota: Blocos Try/Catch sao obrigatorios
 		try {
 			db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
+		    
 			Document doc = db.parse(descriptions);
 			Document docAtomic = db.parse(atomic);
 			
@@ -65,18 +75,23 @@ public class ConversorTrial {
 			Element expressao = (Element)expressoes.item(i);
 			String playerId = expressao.getAttribute("PLAYER_ID");
 			//System.out.print(playerId);
-			arquivoTrial = new File("trials/"+playerId+".xml");
+			arquivoTrial = new File(dirDestino+"/"+playerId+".xml");
 			Document doc;
 			try {
 				doc = db.parse(arquivoTrial);
 				escreveContext(expressao,  atomic, doc);
 			
-			} catch (IOException | SAXException e) {
+			} catch (IOException  e) {
 				doc = db.newDocument();
 				Element trial = doc.createElement("TRIAL");
 				trial.setAttribute("ID", playerId);
 				doc.appendChild(trial);
 				escreveContext(expressao, atomic, doc);
+			}
+			catch(SAXException e)
+			{
+				System.out.println("Arquivo vazio!");
+				return;
 			}
 			
 			salvaXML(doc, arquivoTrial);
@@ -87,7 +102,15 @@ public class ConversorTrial {
 		String target = expressao.getAttribute("TARGET_ID");
 		//docTrial.normalizeDocument();
 		Element raiz = docTrial.getDocumentElement();
+		
 		Element context = docTrial.createElement("CONTEXT");
+		
+		if(raiz.getElementsByTagName("ATTRIBUTE").getLength()>0)
+		{
+			Text a = docTrial.createTextNode("\t");
+			raiz.appendChild(a);
+			//a.appendChild(context);
+		}
 		
 		//System.out.print(" "+target+"\n");
 		context.setAttribute("TARGET", target);
@@ -153,11 +176,37 @@ public class ConversorTrial {
 						break;
 					case "corner":
 						Element canto = docTrial.createElement("ATTRIBUTE");
-						canto.setAttribute("NAME","others"); 
-						canto.setAttribute("VALUE", "corner("+relation.getAttribute("LANDMARK")+")");
+						canto.setAttribute("NAME","corner"); 
+						canto.setAttribute("VALUE", relation.getAttribute("LANDMARK"));
 						atributeSet.appendChild(canto);
 						break;
-						
+					case "next":
+						Element proximo = docTrial.createElement("ATTRIBUTE");
+						proximo.setAttribute("NAME","next"); 
+						proximo.setAttribute("VALUE",relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(proximo);
+						break;
+					case "up":
+						Element acima = docTrial.createElement("ATTRIBUTE");
+						acima.setAttribute("NAME","up"); 
+						acima.setAttribute("VALUE",relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(acima);
+						break;
+					case "in front of":
+						Element frente = docTrial.createElement("ATTRIBUTE");
+						frente.setAttribute("NAME","infrontof"); 
+						frente.setAttribute("VALUE", relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(frente);
+						break;
+					case "behind":
+						Element atras = docTrial.createElement("ATTRIBUTE");
+						atras.setAttribute("NAME","behind"); 
+						atras.setAttribute("VALUE", relation.getAttribute("LANDMARK"));
+						atributeSet.appendChild(atras);
+						break;
+					default:
+						System.out.println(name);
+						break;	
 				}
 			}
 			if(landmark!=null)
@@ -182,6 +231,9 @@ public class ConversorTrial {
 							cor.setAttribute("VALUE", atributoLandmark.getAttribute("VALUE"));
 							atributeSet.appendChild(cor);
 							break;
+						default:
+							System.out.println(name);
+							break;
 					}
 				}
 			}
@@ -194,7 +246,7 @@ public class ConversorTrial {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		
-		//Nota: Blocos Try/Catch s�o obrigat�rios
+		//Nota: Blocos Try/Catch sao obrigatorios
 		try {
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			//Define estrutura Document dos XMLs de entrada
@@ -203,7 +255,7 @@ public class ConversorTrial {
 			//Define elemento raiz 
 			Element raiz = doc.getDocumentElement();
 			
-			//Nodelist das express�es
+			//Nodelist das expressoes
 			NodeList expressoes = raiz.getElementsByTagName("EXPRESSION");
 			
 			for(int i = 0; i<expressoes.getLength(); i++)
@@ -234,7 +286,11 @@ public class ConversorTrial {
 			DOMSource source = new DOMSource(doc);
 			StreamResult result = new StreamResult(new FileOutputStream(arquivoXML));
 			TransformerFactory transFactory = TransformerFactory.newInstance();
+			transFactory.setAttribute("indent-number", new Integer(4));
 			
+			
+			File stylesheet = new File(xsl);
+			StreamSource stylesource = new StreamSource(stylesheet);
 			
 			Transformer transformer = transFactory.newTransformer();
 			
@@ -243,12 +299,12 @@ public class ConversorTrial {
 			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount","4");
 			//transformer.setOutputProperty(OutputKeys.STANDALONE, "yes");
 			//transformer.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC, "yes");
-			transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+			//transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 			transformer.transform(source, result);
 		} catch (TransformerException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		} catch (FileNotFoundException e) {
-			File dir = new File("trials");
+			File dir = new File(dirDestino);
 			dir.mkdir();
 			salvaXML(doc, arquivoXML);
 		}
