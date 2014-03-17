@@ -1,4 +1,7 @@
 tutoria
 =======
 
-Contém um leitor XML que converte informações para arff. Além disso, dois programas que utilizam classificadores J48 gerados com o Weka para avaliar determinadas entradas.
+Repositório utilizado durante o programa de tutoria Científico-Acadêmica. Contém programas auxiliares para o desenvolvimento do experimento Stars.
+
+-Leitor XML: Lê arquivos XML com informações e as converte para Arff (formato de entrada do Weka).
+-Classificadores: Programas que utilizam classificadores Naive-Bayes com a Weka API para avaliar entradas.
